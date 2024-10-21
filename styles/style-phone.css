@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.header{
+    width:100%;
+    height:auto;
+    background:white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px 0 5px 0;
+}
+
+.header a{
+    width:auto;
+    margin:5px auto 5px auto;
+}
+
+.header img{
+    height:60px;
+}
+
+.menuButtonContainer{
+    width:100%;
+    padding:10px 0 10px 0;
+    background:rgb(15, 62, 88);
+}
+
+.menuButtonContainer #menuButton{
+    color:white;
+    padding:2px;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    width:35px;
+    font-size: 20px;
+    margin-left:10px;
+}
+
+.menuButtonContainer #menuButton:hover{
+    color:rgb(114, 114, 114);
+    border:2px solid rgb(114, 114, 114);
+}
+
+.menuButtonContainer #menuButton i{
+    margin-top: 4px;
+}
+ 
+.menu{
+    max-height:0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
+    background: rgb(42, 98, 116);
+    align-items: center;
+}
+
+.menu.show{
+    max-height:450px;
+}
+
+.menu ul{
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    width:100%;
+}
+
+.menu ul li{
+    margin:5px 0 5px 0;
+    width:100%;
+    list-style-type: none;
+}
+
+.menu ul li a{
+    margin-left:20px;
+}
+
+.menu ul #dropdown{
+    position:relative;
+    display:flex;
+    max-height:0px;
+    list-style: none;
+    transition: max-height 0.5s ease;
+    flex-direction: column;
+    width:100%;
+    background:rgb(58, 132, 156);
+    overflow:hidden;
+    margin:0;
+}
+
+.menu ul #dropdown.show{
+    max-height:200px;
+    margin:10px 0 10px 0;
+}
+
+.menu ul li #dropdown a{
+    font-size: 15px;
+    margin-left:20px;
+}
+
+.menu ul li #dropdown li{
+    margin-top:10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+.menu ul li a:hover{
+    color:rgb(59, 59, 59);
+    cursor:pointer;
+}
+
+.menu .lang{
+    margin: 10px auto 5px auto;
+}
+
+.menu .lang a{
+    margin-left:10px;
+}
+
+.menu .lang img{
+    height:30px;
+    width:50px;
+}
+
+footer{
+    position:relative;
+    bottom:0px;
+    padding:10px 0 10px 0;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    background:rgb(31, 44, 71);
+    color:whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    margin-top:10px;
+}
+
+footer div a{
+    color:rgb(184, 184, 184);
+    text-decoration: none;
+    margin:0 15px 0 15px;
+}
+
+.mainContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContainer{
+    width:90%;
+}
+
+.textContainer h2{
+    font-size: 20px;
+}
+
+.textContainer p{
+    font-size: 15px;
+    margin-bottom:30px;
+}
+
+.textContainer ul{
+    margin-bottom:30px;
+}
+
+.textContainer ul li{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+.mainContainer embed{
+    margin:50px auto 50px auto;
+    aspect-ratio: 10 / 12;
+    width:90%;
+    min-height:750px;
+}
+
+.mainContainer .title{
+    margin:40px auto 30px auto;
+    text-align: center;
+}
+
+.mainContainer .title h3{
+    font-size: 20px;
+}
+
+.mainContainer table, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.mainContainer table td,th{
+    padding:5px;
+    height:24px;
+}
+
+.mainContainer table th{
+    background:rgb(224, 224, 224);
+}
+
+.mainContainer table{
+    width:90%;
+    margin-bottom:100px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../../styles/style-wide.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="../../styles/style-phone.css">
+    <script src="https://kit.fontawesome.com/f44ce4c8a1.js" crossorigin="anonymous"></script>
+    <title>Erasmus +</title>
+</head>
+<body>
+    <div class="header">
+        <a href="https://erasmus-plus.ec.europa.eu/"><img src="../../img/erasmus_logo.jpg" alt="european union"></a>
+        <a href="https://www.bolyai.ro/"><img src="../../img/bolyai_hu.png" alt="bolyai farkas"></a>
+    </div>
+    <div class="menuButtonContainer">
+        <div id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu" id="menudrop">
+        <ul>
+            <li><a href="../../index.html">Kezdőlap</a></li>
+            <li><a href="../ismerteto.html">Ismertető</a></li>
+            <li><a href="../galeria.html">Galéria</a></li>
+            <li>
+                <a id="dmenu">Mobilitás ↴</a>
+                <ul id="dropdown">
+                    <li><a href="kivalasztas.html">A résztvevők kiválasztása</a></li>
+                    <li><a href="resztvevok.html">Résztvevők</a></li>
+                    <li><a href="felkeszitok.html">Felkészítők</a></li>
+                    <li><a href="projektek.html">Projektek</a></li>
+                </ul>
+            </li>
+            <li><a href="../utmutato.html">Útmutató</a></li>
+            <li><a href="../mediaszereplesek.html">Médiaszereplések</a></li>
+        </ul>
+        <div class="lang">
+            <a href="#"><img src="../../img/hun.png" alt="magyar"></a>
+            <a href="../../ro/mobilitate/participanti.html"><img src="../../img/ro.png" alt="roman"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mainContainer">
+            <br>
+            <h3>NÉVJEGYZÉK</h3>
+            <h3>a mobilitásban résztvevők névsora</h3>
+            <h3>a VET Erasmus+ 2023-1-R001-KA122-VET-000145442 projekt keretében</h3>
+            <h3>"Az iskolától a webes szakmáig"</h3>
+            <div class="textContainer">
+                <br><br><br>
+                <span><b>A projekt kedvezményezettje:</b> Bolyai Farkas Elméleti Líceum, Marosvásárhely, Románia</span>
+                <br>
+                <span><b>Partnerek:</b> "ATIGRA Consultores Informáticos S.L." és "JDM Solutions", Spanyolország</span>
+                <br>
+                <span><b>Támogató szervezet:</b> "M.E.P. Europrojects Granada, Spanyolország</span>
+                <br>
+                <span><b>Mobilitási időszak:</b> 2024.04.15-2024.05.03 <b>(utazási napok nélkül)</b></span>
+                <br><br>
+                <span><b>Résztvevők:</b></span>
+                <ol>
+                    <li>Barta-Zágoni Csongor</li>
+                    <li>Chiorean Péter Noémi</li>
+                    <li>Csipán Norbert</li>
+                    <li>Csiszér Bálint</li>
+                    <li>Fekete Krisztián</li>
+                    <li>Illés Beáta Amália</li>
+                    <li>Iszlai Bálint</li>
+                    <li>Jánosi Barna Botond</li>
+                    <li>Kránics Péter</li>
+                    <li>Metz Zselyke Boglárka</li>
+                    <li>Osztián Zoltán-Béla</li>
+                    <li>Papp Iringó</li>
+                    <li>Simon Anna</li>
+                    <li>Székely Bálint</li>
+                    <li>Szilágyi Szilárd</li>
+                    <li>Szövérfi Sarolta</li>
+                </ol>
+                <br>
+                <span><b>Kísérő tanárok:</b></span>
+                <ul>
+                    <li>Jakab Irma-Tünde</li>
+                    <li>Ignát Judit-Anna</li>
+                    <li>Balázs-Oldal Katalin</li>
+                </ul>
+            </div>
+            <h4>Igazgató: Hajdú Zoltán</h4>
+        </div>
+    </div>
+    
+    <footer>
+        <h3>HASZNOS OLDALAK</h3>
+        <div>
+            <a href="https://bolyai.ro/"><i class="fa-solid fa-globe"></i></i> bolyai.ro</a>
+            <a href="https://www.facebook.com/profile.php?id=61558639075533"><i class="fa-brands fa-square-facebook"></i> Vet Erasmus Plus Bolyai Farkas</a>
+        </div>
+    </footer>
+
+    <script>
+        const dmenu = document.getElementById("dmenu");
+        const dlist = document.getElementById("dropdown");
+
+        const dropButton = document.getElementById("menuButton");
+        const menudrop = document.getElementById("menudrop");
+        let ok=0,ok1=0;
+        
+        document.addEventListener("click",function(event){
+            if(!dlist.contains(event.target) && ok){
+                dlist.classList.toggle("show");
+                ok=0;
+            }
+        });
+        
+        dmenu.addEventListener("click",function(event){
+            event.stopPropagation();
+            dlist.classList.toggle("show");
+            if(ok) ok=0;
+            else ok=1;
+        });
+
+        dropButton.addEventListener("click",function(event){
+            event.stopPropagation();
+            menudrop.classList.toggle("show");
+            if(ok1) ok1=0;
+            else ok1=1;
+        });
+    </script>
+</body>
+</html>

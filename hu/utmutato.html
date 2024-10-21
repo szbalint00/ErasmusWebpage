@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../styles/style-wide.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="../styles/style-phone.css">
+    <script src="https://kit.fontawesome.com/f44ce4c8a1.js" crossorigin="anonymous"></script>
+    <title>Erasmus +</title>
+	<style>
+		.mainContainer{
+			width:100%;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		
+		.mainContainer .flexContainer{
+			width:70%;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:center;
+		}
+		
+		.mainContainer .flexContainer .projectCard{
+			width:90%;
+			max-width:350px;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			border:3px solid black;
+			margin:20px;
+			margin-top:50px;
+			border-radius:20px;
+			overflow:hidden;
+			position:relative;
+		}
+		
+		.mainContainer .flexContainer .projectCard img{
+			width:100%;
+		}
+		
+		.mainContainer .flexContainer .projectCard h5{
+			font-size:20px;
+			margin-bottom:25px;
+		}
+		.mainContainer .flexContainer .projectCard div{
+			position: absolute;
+			background:black;
+			color:white;
+			width:100%;
+			text-align:center;
+			border-top:3px solid black;
+			bottom:0;
+		}
+		.mainContainer .flexContainer .projectCard div:hover{
+			background:whitesmoke;
+			cursor:pointer;
+			color:black;
+		}
+		
+		@media screen and (max-width: 992px) {
+			.mainContainer .flexContainer{
+				width:90%;
+			}
+		}
+
+		footer{
+			position: relative;
+			margin-top:150px;
+			bottom: 0;
+			width: 100%;
+		}
+
+		main{
+			position: relative;
+  			min-height: 100vh;
+		}
+	</style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://erasmus-plus.ec.europa.eu/"><img src="../img/erasmus_logo.jpg" alt="european union"></a>
+        <a href="https://www.bolyai.ro/"><img src="../img/bolyai_hu.png" alt="bolyai farkas"></a>
+    </div>
+    <div class="menuButtonContainer">
+        <div id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu" id="menudrop">
+        <ul>
+            <li><a href="../index.html">Kezdőlap</a></li>
+            <li><a href="./ismerteto.html">Ismertető</a></li>
+            <li><a href="./galeria.html">Galéria</a></li>
+            <li>
+                <a id="dmenu">Mobilitás ↴</a>
+                <ul id="dropdown">
+                    <li><a href="./mobilitas/kivalasztas.html">A résztvevők kiválasztása</a></li>
+                    <li><a href="./mobilitas/resztvevok.html">Résztvevők</a></li>
+                    <li><a href="./mobilitas/felkeszitok.html">Felkészítők</a></li>
+                    <li><a href="./mobilitas/projektek.html">Projektek</a></li>
+                </ul>
+            </li>
+            <li><a href="./utmutato.html">Útmutató</a></li>
+            <li><a href="./mediaszereplesek.html">Médiaszereplések</a></li>
+        </ul>
+        <div class="lang">
+            <a href="#"><img src="../img/hun.png" alt="magyar"></a>
+            <a href="../ro/ghid.html"><img src="../img/ro.png" alt="roman"></a>
+        </div>
+    </div>
+    <div class="main">
+		<div class="mainContainer">
+			<div class="flexContainer">
+				<div class="projectCard">
+					<img src="../img/utmutato/html.png">
+					<h5>HTML</h5>
+					<div class="cardButton" id="HTML">Prezentáció</div>
+				</div>
+				<div class="projectCard">
+					<img src="../img/utmutato/css.png">
+					<h5>CSS</h5>
+					<div class="cardButton" id="CSS">Prezentáció</div>
+				</div>
+				<div class="projectCard">
+					<img src="../img/utmutato/js.png">
+					<h5>Javascript</h5>
+					<div class="cardButton" id="JS">Prezentáció</div>
+				</div>
+				<div class="projectCard">
+					<img src="../img/utmutato/mongodb.png">
+					<h5>MongoDB</h5>
+					<div class="cardButton" id="MDB">Prezentáció</div>
+				</div>
+				<div class="projectCard">
+					<img src="../img/utmutato/github.png">
+					<h5>GitHub</h5>
+					<div class="cardButton" id="GH">Prezentáció</div>
+				</div>
+				<div class="projectCard">
+					<img src="../img/utmutato/visualstudio.png">
+					<h5>Visual Studio Code</h5>
+					<div class="cardButton" id="VSC">Prezentáció</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<h3>HASZNOS OLDALAK</h3>
+			<div>
+				<a href="https://bolyai.ro/"><i class="fa-solid fa-globe"></i></i> bolyai.ro</a>
+				<a href="https://www.facebook.com/profile.php?id=61558639075533"><i class="fa-brands fa-square-facebook"></i> Vet Erasmus Plus Bolyai Farkas</a>
+			</div>
+		</footer>
+	</div>
+	
+    <script>
+		const html = document.getElementById("HTML");
+		const css = document.getElementById("CSS");
+		const js = document.getElementById("JS");
+		const mdb = document.getElementById("MDB");
+		const gh = document.getElementById("GH");
+		const vsc = document.getElementById("VSC");
+		
+		html.addEventListener("click",function(event){
+			window.open("../pdf/html.pdf", '_blank');
+		});
+		css.addEventListener("click",function(event){
+			window.open("../pdf/css.pdf", '_blank');
+		});
+		js.addEventListener("click",function(event){
+			window.open("../pdf/js.pdf", '_blank');
+		});
+		mdb.addEventListener("click",function(event){
+			window.open("../pdf/mongodb.pdf", '_blank');
+		});
+		gh.addEventListener("click",function(event){
+			window.open("../pdf/github.pdf", '_blank');
+		});
+		vsc.addEventListener("click",function(event){
+			window.open("../pdf/visualstudio.pdf", '_blank');
+		});
+	
+        const dmenu = document.getElementById("dmenu");
+        const dlist = document.getElementById("dropdown");
+		
+        const dropButton = document.getElementById("menuButton");
+        const menudrop = document.getElementById("menudrop");
+        let ok=0,ok1=0;
+        
+        document.addEventListener("click",function(event){
+			if(!dlist.contains(event.target) && ok){
+				dlist.classList.toggle("show");
+                ok=0;
+            }
+        });
+        
+        dmenu.addEventListener("click",function(event){
+			event.stopPropagation();
+            dlist.classList.toggle("show");
+            if(ok) ok=0;
+            else ok=1;
+        });
+
+        dropButton.addEventListener("click",function(event){
+			event.stopPropagation();
+            menudrop.classList.toggle("show");
+            if(ok1) ok1=0;
+            else ok1=1;
+        });
+		</script>
+</body>
+</html>

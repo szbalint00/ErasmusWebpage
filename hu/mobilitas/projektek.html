@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../../styles/style-wide.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="../../styles/style-phone.css">
+    <link rel="stylesheet" href="../../styles/projects.css">
+    <script src="https://kit.fontawesome.com/f44ce4c8a1.js" crossorigin="anonymous"></script>
+    <title>Erasmus +</title>
+</head>
+<body>
+    <div class="header">
+        <a href="https://erasmus-plus.ec.europa.eu/"><img src="../../img/erasmus_logo.jpg" alt="european union"></a>
+        <a href="https://www.bolyai.ro/"><img src="../../img/bolyai_hu.png" alt="bolyai farkas"></a>
+    </div>
+    <div class="menuButtonContainer">
+        <div id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu" id="menudrop">
+        <ul>
+            <li><a href="../../index.html">Kezdőlap</a></li>
+            <li><a href="../ismerteto.html">Ismertető</a></li>
+            <li><a href="../galeria.html">Galéria</a></li>
+            <li>
+                <a id="dmenu">Mobilitás ↴</a>
+                <ul id="dropdown">
+                    <li><a href="kivalasztas.html">A résztvevők kiválasztása</a></li>
+                    <li><a href="resztvevok.html">Résztvevők</a></li>
+                    <li><a href="felkeszitok.html">Felkészítők</a></li>
+                    <li><a href="projektek.html">Projektek</a></li>
+                </ul>
+            </li>
+            <li><a href="../utmutato.html">Útmutató</a></li>
+            <li><a href="../mediaszereplesek.html">Médiaszereplések</a></li>
+        </ul>
+        <div class="lang">
+            <a href="#"><img src="../../img/hun.png" alt="magyar"></a>
+            <a href="../../ro/mobilitate/proiekte.html"><img src="../../img/ro.png" alt="roman"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mainprojcont">
+            <div class="projektContainer">
+                <div class="projekt">
+                    <embed src="../../img/projektek/brittoria.png" width="auto" height="300px">
+                    <h6>Brittoria</h6>
+                    <span>Simon Anna,<br> Kránics Péter, <br>Csipán Norbert, <br>Osztián Zoltán</span>
+                    <a href="../../pdf/Brittoria.pdf" target="_blank">Prezentáció</a>
+                    <div id="brittoriaButton">Weboldal megtekintése</div>
+                </div>
+                <div class="projekt">
+                    <embed src="../../img/projektek/flickflix.png" width="auto" height="300px">
+                    <h6>FlickFlix</h6>
+                    <span>Barta-Zágoni Csongor,<br> Iszlai Bálint,<br> Metz Zselyke-Boglárka,<br> Szilágyi Szilárd</span>
+                    <a href="../../pdf/FlickFlix.pdf" target="_blank">Prezentáció</a>
+                    <div id="flickflixButton">Weboldal megtekintése</div>
+                </div>
+                <div class="projekt">
+                    <embed src="../../img/projektek/gamegarden.png" width="auto" height="300px">
+                    <h6>Game Garden</h6>
+                    <span>Chiorean-Péter Noémi, <br>Csiszér Bálint, <br>Jánosi-Barna Botond, <br>Szövérfi Sarolta</span>
+                    <a href="../../pdf/GameGarden.pdf" target="_blank">Prezentáció</a>
+                    <div id="gamegardenButton">Weboldal megtekintése</div>
+                </div>
+                <div class="projekt">
+                    <embed src="../../img/projektek/igenis.png" width="auto" height="300px">
+                    <h6>IGENIS</h6>
+                    <span> Illés Beáta Amália,<br> Papp Iringó,<br> Fekete Krisztián,<br> Székely Bálint</span>
+                    <a href="../../pdf/IGENIS.pdf" target="_blank">Prezentáció</a>
+                    <div id="igenisButton">Weboldal megtekintése</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>HASZNOS OLDALAK</h3>
+        <div>
+            <a href="https://bolyai.ro/"><i class="fa-solid fa-globe"></i></i> bolyai.ro</a>
+            <a href="https://www.facebook.com/profile.php?id=61558639075533"><i class="fa-brands fa-square-facebook"></i> Vet Erasmus Plus Bolyai Farkas</a>
+        </div>
+    </footer>
+
+    <script>
+        const bButton = document.getElementById("brittoriaButton");
+        const fButton = document.getElementById("flickflixButton");
+        const gButton = document.getElementById("gamegardenButton");
+        const iButton = document.getElementById("igenisButton");
+
+        bButton.addEventListener("click",function(event){
+            window.open("https://csipix.github.io/TheBiteTrattoria/?fbclid=IwZXh0bgNhZW0CMTEAAR2r7v-6plm5TuQSaKv1SDuRGx_VC81SXhowjuWP_bxQaRBIfBkpRwGrAT4_aem_CTNeirStc0bUhJ86WTisVg", '_blank');
+        });
+        fButton.addEventListener("click",function(event){
+            window.open("https://szili06.github.io/FlickFix/?fbclid=IwZXh0bgNhZW0CMTEAAR2eB30Nf-o8XvQ3X-tFEuQcQimApg-_dxP-Yx6jSV3UG_lmTAPYNQR42XA_aem_ONRaW31h_Jyog4Be6tVALw", '_blank');
+        });
+        gButton.addEventListener("click",function(event){
+            window.open("https://balint3938.github.io/GameGarden/?fbclid=IwZXh0bgNhZW0CMTEAAR2q6zTxvoOPrVzJVUUMoHDQEbjHypAXr-vDenll6pWAf4ArmXpp7hBmpEg_aem_3PG88HD-rDVooxpLNq3ZPQ", '_blank');
+        });
+        iButton.addEventListener("click",function(event){
+            window.open("https://szbalint00.github.io/WebErasmus/?fbclid=IwAR1rfS_53-cc3uzXbq2nVIDe0Km7RPrNKfKpxR0pPP14Yl2vP_1ktkBR80I", '_blank');
+        });
+
+        const dmenu = document.getElementById("dmenu");
+        const dlist = document.getElementById("dropdown");
+
+        const dropButton = document.getElementById("menuButton");
+        const menudrop = document.getElementById("menudrop");
+        let ok=0,ok1=0;
+        
+        document.addEventListener("click",function(event){
+            if(!dlist.contains(event.target) && ok){
+                dlist.classList.toggle("show");
+                ok=0;
+            }
+        });
+        
+        dmenu.addEventListener("click",function(event){
+            event.stopPropagation();
+            dlist.classList.toggle("show");
+            if(ok) ok=0;
+            else ok=1;
+        });
+
+        dropButton.addEventListener("click",function(event){
+            event.stopPropagation();
+            menudrop.classList.toggle("show");
+            if(ok1) ok1=0;
+            else ok1=1;
+        });
+    </script>
+</body>
+</html>

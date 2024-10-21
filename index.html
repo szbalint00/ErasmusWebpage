@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="./styles/style-wide.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="./styles/style-phone.css">
+    <link rel="stylesheet" href="./styles/slideshow.css">
+    <script src="https://kit.fontawesome.com/f44ce4c8a1.js" crossorigin="anonymous"></script>
+    <title>Erasmus +</title>
+    <style>
+		*{
+			margin:0;
+			    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		}
+		
+		.main{
+			width:100%;
+		}
+		
+		.main .flexContainer{
+			width:100%;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+		}
+		
+		.main .flexContainer .textcontainer{
+			width:70%;
+		}
+		
+		.main .flexContainer .textcontainer h4{
+			margin:30px;
+			text-align:center;
+			font-size:20px;
+		}
+		
+		.main .flexContainer .textcontainer p{
+			margin:20px 0;
+		}
+		
+		.main .flexContainer .textcontainer div{
+			width:100%;
+			text-align:right;
+			margin:20px 0;
+			color:grey;
+		}
+
+        @media only screen and (max-width: 1024px){
+            .main .flexContainer .textcontainer{
+                width:90%;
+            }
+        }
+	</style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://erasmus-plus.ec.europa.eu/"><img src="./img/erasmus_logo.jpg" alt="european union"></a>
+        <a href="https://www.bolyai.ro/"><img src="./img/bolyai_hu.png" alt="bolyai farkas"></a>
+    </div>
+    <div class="menuButtonContainer">
+        <div id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu" id="menudrop">
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="./hu/ismerteto.html">Ismertető</a></li>
+            <li><a href="./hu/galeria.html">Galéria</a></li>
+            <li>
+                <a id="dmenu">Mobilitás ↴</a>
+                <ul id="dropdown">
+                    <li><a href="./hu/mobilitas/kivalasztas.html">A résztvevők kiválasztása</a></li>
+                    <li><a href="./hu/mobilitas/resztvevok.html">Résztvevők</a></li>
+                    <li><a href="./hu/mobilitas/felkeszitok.html">Felkészítők</a></li>
+                    <li><a href="./hu/mobilitas/projektek.html">Projektek</a></li>
+                </ul>
+            </li>
+            <li><a href="./hu/utmutato.html">Útmutató</a></li>
+            <li><a href="./hu/mediaszereplesek.html">Médiaszereplések</a></li>
+        </ul>
+        <div class="lang">
+            <a href="#"><img src="./img/hun.png" alt="magyar"></a>
+            <a href="./ro/acasa.html"><img src="./img/ro.png" alt="roman"></a>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="mainContainer">
+            <div class="slideshowContainer">
+                <div id="slideshow">
+                    <img class="slideshowPic" src="./img/kezdolap/img1.jpg" alt="slideshow image 1">
+                    <img class="slideshowPic" src="./img/kezdolap/img2.jpg" alt="slideshow image 2">
+                    <img class="slideshowPic" src="./img/kezdolap/img3.jpg" alt="slideshow image 3">
+                    <img class="slideshowPic" src="./img/kezdolap/img4.jpg" alt="slideshow image 4">
+                    <img class="slideshowPic" src="./img/kezdolap/img5.jpg" alt="slideshow image 5">
+                    <img class="slideshowPic" src="./img/kezdolap/img6.jpg" alt="slideshow image 6">
+                    <img class="slideshowPic" src="./img/kezdolap/img7.jpg" alt="slideshow image 7">
+                    <img class="slideshowPic" src="./img/kezdolap/img8.jpg" alt="slideshow image 8">
+                    <img class="slideshowPic" src="./img/kezdolap/img9.jpg" alt="slideshow image 9">
+                    <img class="slideshowPic" src="./img/kezdolap/img10.jpg" alt="slideshow image 10">
+                    <img class="slideshowPic" src="./img/kezdolap/img11.jpg" alt="slideshow image 11">
+                    <img class="slideshowPic" src="./img/kezdolap/img12.jpg" alt="slideshow image 12">
+                    <img class="slideshowPic" src="./img/kezdolap/img13.jpg" alt="slideshow image 13">
+                    <img class="slideshowPic" src="./img/kezdolap/img14.jpg" alt="slideshow image 14">
+                    <img class="slideshowPic" src="./img/kezdolap/img15.jpg" alt="slideshow image 15">
+                    <img class="slideshowPic" src="./img/kezdolap/img16.jpg" alt="slideshow image 16">
+                    <img class="slideshowPic" src="./img/kezdolap/img17.jpg" alt="slideshow image 17">
+                </div>
+            </div>
+    
+            <div class="flexContainer">
+                <div class="textcontainer">
+                    <h4>Erasmus + projekt - Az iskolától a web szakmáig, Bolyasisok Spanyolországban</h4>
+                    <p>Mi történik, ha tizenhat diákot kiemelünk a természetes élőhelyükről, és áthelyezzük őket egy teljesen új környezetbe? A bolyais diák, különleges életforma lévén, mint kiderült, könnyen alkalmazkodik egy szignifikáns mennyiségű kulturális különbségekkel rendelkező helyszínhez is, még ha nem is az első naptól kezdődően.</p>
+                    <p>A Marosvásárhelyi Bolyai Farkas Elméleti Líceum és a Spanyolországi Granada városa között nem véletlenül hangzik akkorának az a bizonyos lépés, hiszen az odautazó diákok nem csak felejthetetlen élményekkel, hanem életre szóló tapasztalatokkal megpakolt bőrönddel tértek haza az útról. Kis lépés az embernek, de nagy lépés egy bolyaisnak! Az viszont bizonyos, hogy annak a szintű változásnak okát, amin a három hét lefolyása alatt keresztülmentek az utazók, nem lehet sem kettő, sem három mondatban megmagyarázni.</p>
+                    <p>Megérkezve a városba egy kiadós pihenés után küldetésük első fele a projektet megszervező központtal és a céggel való megbarátkozás volt, ahol az elkövetkezendő napokban a munkaidejüket töltötték. Szerencsére úgy az oktatójukban, mint a központ dolgozóiban segítőkész és barátságos embereket ismerhettek meg. A flexibilis fiataloknak a napi körülbelül 7 órányi intenzív, számítógép előtt végzett munka sem jelentett túl nagy gondot, pár nap alatt már egészen otthonosan mozogtak munkakörnyezetükben. A forgalmas és színes, narancsfákkal tarkított utcák hamar magukba szippantották a diákokat, annyira, hogy nem sok idő múlva már teljesen magabiztosan tudtak tájékozódni a néhol összezavaró labirintusban.</p>
+                    <p>Sokuk szerint a projekten belül szervezett kirándulások voltak az ott töltött idő legkiemelkedőb részei. Az andalúz látványosságok egyedisége világhírű, és nem is okoztak csalódást a fiataloknak. Kezdetnek az Alhambrába látogattak el, ami a város egyik legmagasabb pontján elhelyezkedő erőd és palota épületegyüttese. A mór és keresztény elemekkel díszített műemlék kétségtelenül páratlan látványt nyújtott, emellett a városra való kilátás sem volt elhanyagolandó. Olyannyira, hogy a diákok többször is visszatértek erre a helyre a későbbiekben. Nem sokkal később Gibraltár fele vezetett az útjuk. A szeszélyes időjárás ellenére igazi kalandorokhoz méltóan hódították meg a hegygerincet, megküzdve az ott élő bennszülöttekkel, a majmokkal. A természetvédelmi rezervátum színes növényvilága és a tenger eget tükröző látványa hamar betöltötte a diákok telefonjának galériáját és fényképezőgépüket. Következő állomásuk rögtön Sevilla volt, ahol először a vizesárokkal körülölelt teret, a Plaza de España-t csodálhatták meg, utána pedig a Sevilla-i katedrális hatalmas épületét járták be. Végül, de nem utolsó soroban Malaga városának látványosságait tekintették meg, többek között a híres Picasso Múzeumot.</p>
+                    <p>A kirándulások mellett viszont a munka sem maradhatott el. Három hét alatt a diákok a HTML, CSS, Javascript és az adatbáziskezelés alapjait kellett elsajátítaniuk, amivel bizony nagy fába vágták a fejszéjüket. Viszont nem okoztak csalódást, a kiszabott határidő végére, újonnan szerzett tudásukat felhasználva, négyes csoportokban olyan projekteket készítettek, amik teljes mértékben megütötték a felállított mércét.</p>
+                    <p>Oktatójuk és tanáraik egyaránt büszkék voltak rájuk. Ezzel viszont nem csupán szakmai tudásukat gyarapították, hanem belekóstolhattak az önállóságba és a csapatmunka kihívásaiba. Sokuknak, akik tanulmányaik elvégzése után is ezzel szeretnének foglalkozni, segített kialakítani egy tisztább jövőképet és véleményt a szakmáról.</p>
+                    <p>Összességében tehát a küldetést sikeresnek könyvelték el. Olyan élményekkel gazdagodtak, amikre életük végéig szép emlékként tekintenek vissza, és tapasztalataik még rengeteg hasznot kovácsolnak nekik a közeli és távoli jövőjükben.</p>
+                    <div>Simon Anna</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <h3>HASZNOS OLDALAK</h3>
+        <div>
+            <a href="https://bolyai.ro/"><i class="fa-solid fa-globe"></i></i> bolyai.ro</a>
+            <a href="https://www.facebook.com/profile.php?id=61558639075533"><i class="fa-brands fa-square-facebook"></i> Vet Erasmus Plus Bolyai Farkas</a>
+        </div>
+    </footer>
+
+    <script src="./js/slideshow.js"></script>
+    <script>
+        const dmenu = document.getElementById("dmenu");
+        const dlist = document.getElementById("dropdown");
+
+        const dropButton = document.getElementById("menuButton");
+        const menudrop = document.getElementById("menudrop");
+        let ok=0,ok1=0;
+        
+        document.addEventListener("click",function(event){
+            if(!dlist.contains(event.target) && ok){
+                dlist.classList.toggle("show");
+                ok=0;
+            }
+        });
+        
+        dmenu.addEventListener("click",function(event){
+            event.stopPropagation();
+            dlist.classList.toggle("show");
+            if(ok) ok=0;
+            else ok=1;
+        });
+
+        dropButton.addEventListener("click",function(event){
+            event.stopPropagation();
+            menudrop.classList.toggle("show");
+            if(ok1) ok1=0;
+            else ok1=1;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../styles/style-wide.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="../styles/style-phone.css">
+    <link rel="stylesheet" href="../styles/news.css">
+    <script src="https://kit.fontawesome.com/f44ce4c8a1.js" crossorigin="anonymous"></script>
+    <title>Erasmus +</title>
+</head>
+<body>
+    <div class="header">
+        <a href="https://erasmus-plus.ec.europa.eu/"><img src="../img/erasmus_logo.jpg" alt="european union"></a>
+        <a href="https://www.bolyai.ro/"><img src="../img/bolyai_ro.png" alt="bolyai farkas"></a>
+    </div>
+    <div class="menuButtonContainer">
+        <div id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu" id="menudrop">
+        <ul>
+            <li><a href="./acasa.html">Acasă</a></li>
+            <li><a href="./prezentare.html">Prezentare</a></li>
+            <li><a href="./galerie.html">Galerie</a></li>
+            <li>
+                <a id="dmenu">Mobilitate ↴</a>
+                <ul id="dropdown">
+                    <li><a href="./mobilitate/selectie.html">Selecția participanților</a></li>
+                    <li><a href="./mobilitate/participanti.html">Participanți</a></li>
+                    <li><a href="./mobilitate/pregatire.html">Pregătire</a></li>
+                    <li><a href="./mobilitate/proiekte.html">Proiecte</a></li>
+                </ul>
+            </li>
+            <li><a href="./ghid.html">Ghid</a></li>
+            <li><a href="./aparitiiinmedia.html">Apariții în media</a></li>
+        </ul>
+        <div class="lang">
+            <a href="../hu/mediaszereplesek.html"><img src="../img/hun.png" alt="magyar"></a>
+            <a href="#"><img src="../img/ro.png" alt="roman"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="newsContainer">
+            <div class="newsCard">
+                <img src="../img/media/nepujsag.png" alt="image">
+                <h4>Népújság.ro</h4>
+                <p>Erasmus, országos versenyek, kitűnő eredmények <br>Már a tavalyi tanévben számos kiváló eredményt tudhatott magáénak Marosvásárhely legnevesebb alma matere, amit annak is köszönhet, hogy idejében nekiálltak a tervezésnek, és az iskola vezetősége öt évre előre felépítette a stratégiáját. </p>  
+                <span>2023.10.03</span>
+                <div id="b1">Aflați mai multe</div>
+            </div>
+            <div class="newsCard">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmarosvasarhelyitvr%2Fvideos%2F859292329248385%2F&show_text=false&width=560&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <h4>Marosvásárhelyi TVR</h4>
+                <p>Számos projektről számoltak be a Bolyai líceum tanárai.</p>  
+                <span>2023.10.25</span>
+                <div id="b2">Aflați mai multe</div>
+            </div>
+            <div class="newsCard">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ferdelytv%2Fvideos%2F1061656694879064%2F&show_text=false&width=560&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <h4>Erdély TV</h4>
+                <p>Hat Erasmus projektben vesz részt idén a marosvásárhelyi Bolyai Farkas Elméleti Líceum.</p>  
+                <span>2023.10.25</span>
+                <div id="b3">Aflați mai multe</div>
+            </div>
+            <div class="newsCard">
+                <img src="../img/media/facebook.png" alt="image">
+                <h4>Vet Erasmus Plus Bolyai Farkas</h4>
+                <p>Lansare proiect mobilitate VET Erasmus+ 2023-1-RO01-KA122-VET-000145442 „De la școală la profesia web”</p>  
+                <span>2024.4.16</span>
+                <div id="b4">Aflați mai multe</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>PAGINI UTILE</h3>
+        <div>
+            <a href="https://bolyai.ro/"><i class="fa-solid fa-globe"></i></i> bolyai.ro</a>
+            <a href="https://www.facebook.com/profile.php?id=61558639075533"><i class="fa-brands fa-square-facebook"></i> Vet Erasmus Plus Bolyai Farkas</a>
+        </div>
+    </footer>
+
+    <script>
+        const dmenu = document.getElementById("dmenu");
+        const dlist = document.getElementById("dropdown");
+
+        const dropButton = document.getElementById("menuButton");
+        const menudrop = document.getElementById("menudrop");
+        let ok=0,ok1=0;
+        
+        document.addEventListener("click",function(event){
+            if(!dlist.contains(event.target) && ok){
+                dlist.classList.toggle("show");
+                ok=0;
+            }
+        });
+        
+        dmenu.addEventListener("click",function(event){
+            event.stopPropagation();
+            dlist.classList.toggle("show");
+            if(ok) ok=0;
+            else ok=1;
+        });
+
+        dropButton.addEventListener("click",function(event){
+            event.stopPropagation();
+            menudrop.classList.toggle("show");
+            if(ok1) ok1=0;
+            else ok1=1;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.scroll-container {
+    background-color: rgb(42, 98, 116);
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0 0;
+    height: 40vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+.scroll-container:hover{
+	cursor: grab;
+}
+  
+  .scroll-container img {
+    height: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .img-container {
+    height: 96%;
+    padding: 0 10px;
+  }
+  .img-container img{
+    height: 100%;
+  }
+
+  .main h4 {
+    font-size: 50px;
+    margin: 25px 0;
+    text-align: center;
+  }
+    
+
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+	height: 90%;
+	width: 90%;
+    object-fit: contain;
+  }
+
+  .modal-content{
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+  
